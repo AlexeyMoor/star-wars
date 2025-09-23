@@ -8,7 +8,7 @@ body {
   font-family: 'Poller One', sans-serif;
   background-image: url("../images/sky.jpg");
   color: #eedb00;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Фон не прокручивается вместе со страницей */
 }
 
 header, footer {
@@ -33,12 +33,14 @@ nav ul {
 
 nav li {
   display: inline-block;
-  border: 2px solid rgb(255, 84, 0);
-  border-radius: 5px;
-  background-color: rgba(204, 3, 35, 0.5);
-  font-size: 1em;
-  padding: 0.3em 0.6em;
-  cursor: pointer; /* Курсор в виде руки при наведении на элементы навигации */
+  padding: 0.5em 0.6em;
+  margin: 1.5em 0 0 0.6em;
+  font-size: 1.2em;
+  color: white;
+  background-color: rgba(165, 0, 28, 0.7);
+  border-radius: 20px;
+  cursor: pointer; /* Курсор в виде руки при наведении на кнопку */
+  text-align: center; /
 }
 
 /* Стили для заголовка (H1) */
@@ -52,7 +54,7 @@ h1 {
   float: left;
   width: 25%;
   margin: 0.3rem 1.2rem 0 0;
-  filter: drop-shadow(0.6rem 0.6rem 0.6rem gray); /* Добавление тени к изображению */
+  /*filter: drop-shadow(0.6rem 0.6rem 0.6rem gray); !* Добавление тени к изображению *!*/
 }
 
 .right {
@@ -63,18 +65,39 @@ h1 {
   margin: 0.3rem 0 0 0.6rem;
 }
 
-img {
-  width: 100%;
+/* Стили для заголовка (H2) */
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.cell {
+  float: left;
+  width: 32%;
+  margin: 0 0 0.5% 1%;
+  text-align: center;
+  background-color: rgba(238, 219, 0, 0.15);
+  border: 1px solid #eedb00;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.cell img {
+  width: auto;
   border-radius: 15px;
 }
 
+.left img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px #556865;
+}
 
 .far-galaxy {
   font-size: 1.8em;
   letter-spacing: 0.1em;
   line-height: 1.5;
-  text-align: justify; /* Выравнивание по ширине */
-
+  text-align: justify; /* Выравнивание теста по ширине */
 }
 
 footer {
@@ -85,14 +108,12 @@ footer {
 
 .button {
   display: inline-block;
-  padding: 0.5em 1em;
-  margin: 1em;
+  padding: 0.5em 0.6em;
+  margin: 1.5em 0 0 20em;
   font-size: 1.2em;
-  color: #fff;
-  background-color: rgba(204, 3, 35, 0.7);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  color: white;
+  background-color: rgba(165, 0, 28, 0.7);
+  border-radius: 20px;
+  cursor: pointer; /* Курсор в виде руки при наведении на кнопку */
   text-align: center;
-  text-decoration: none;
 }
