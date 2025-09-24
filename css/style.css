@@ -63,28 +63,24 @@ h1 {
   width: 50%;
   border: 1px solid #eedb00;
   border-radius: 0 0 15px 15px;
-  margin: 0.3rem 0 0 0.6rem;
+  /*margin: 0.3rem 0 0 0.6rem;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Равномерное распределение элементов по горизонтали */
 }
 
 /* Стили для заголовка (H2) */
 h2 {
+  flex-basis: 100%;
   text-align: center;
   font-size: 1.5em;
 }
 
 .cell {
-  float: left;
-  width: 33.33%;
-  display: block;
-  text-align: center;
-  /*background-color: rgba(238, 219, 0, 0.15);*/
-  /*border: 1px solid #eedb00;*/
-  /*border-radius: 15px;*/
-  box-sizing: border-box;
+  width: 33%;
 }
 
 .cell img {
-  width: 100%;
   border-radius: 15px;
 }
 
